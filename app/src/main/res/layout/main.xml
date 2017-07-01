@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:id="@+id/img"
+        android:src="@drawable/firebase_img"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_appfest"
+        android:text="#FirebaseAppFest"
+        android:textSize="40dp"
+        android:textColor="@color/firebase_blue"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_hello"
+        android:layout_below="@id/txt_appfest"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:text="Hello World"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_say_hello"
+        android:text="Say Hello"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/feed_background"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

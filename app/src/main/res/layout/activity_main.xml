@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appfest.firefeeder.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_live_feed"
+        android:text="Live Feed here"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/feed_background"
+        android:padding="5dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_chat"
+        android:stackFromBottom="true"
+        android:layout_below="@id/text_live_feed"
+        android:layout_above="@+id/linear_bottom"/>
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_bottom"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/edittext_msg"
+            android:layout_weight="1"
+            android:hint="Say hello"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_send"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>
